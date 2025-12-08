@@ -1,0 +1,11 @@
+Bundle_Name,Services,Service_Count,Bundle_RPT,Support,Confidence,Lift,Composite_Score,Annual_Occurrences,Projected_Revenue_Lift_MYR
+Bundle 1,Unlimited Body Slimming Sessions + ExpreSculpt Deep Muscle Toning,2,112.39,0.042,0.7818,12.12,1064.85,43,1205.3
+Bundle 2,Unlimited Body Slimming Sessions + Picojoie Laser + ExpreSculpt Deep Muscle Toning,3,123.03,0.0117,0.7059,10.94,950.2,12,104.35
+Bundle 3,ExpreSculpt Deep Muscle Toning + Unlimited Body Slimming Sessions,2,112.39,0.042,0.6515,12.12,887.38,43,-1205.3
+Bundle 4,Picojoie Laser + ExpreSculpt Deep Muscle Toning + Unlimited Body Slimming Sessions,3,123.03,0.0117,0.6,11.16,823.83,12,-232.01
+Bundle 5,Slimming Treatment x 15  @1299  + ExpreSculpt Deep Muscle Toning,2,107.65,0.0108,0.55,8.53,504.73,11,360.56
+Bundle 6,Slimming Treatment x 15  @1299  + Unlimited Body Slimming Sessions,2,79.62,0.0108,0.55,10.23,447.96,11,52.23
+Bundle 7,Eye-Classic Treatment (Fine Lines / Wrinkles) with machine + Picojoie Laser,2,158.75,0.0108,0.4583,3.47,252.7,11,-158.8
+Bundle 8,STRESS AWAY FACIAL  + HIFU 1ST TRIAL,2,144.15,0.0108,0.3667,4.69,247.83,11,496.69
+Bundle 9,ExpreSculpt Deep Muscle Toning + Picojoie Laser,2,142.37,0.0196,0.303,2.3,99.07,20,38.84
+Bundle 10,Unlimited Body Slimming Sessions + Picojoie Laser,2,114.34,0.0166,0.3091,2.34,82.77,17,509.52

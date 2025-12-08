@@ -1,0 +1,22 @@
+{
+  "training_date": "2025-12-05",
+  "train_period": "2021-01-06 00:00:00 to 2024-11-21 00:00:00",
+  "test_period": "2024-11-23 00:00:00 to 2025-11-15 00:00:00",
+  "train_samples": 1020,
+  "test_samples": 256,
+  "features_used": 54,
+  "prophet_metrics": {
+    "MAE": 3565.945024937228,
+    "RMSE": 4401.117926093898,
+    "MAPE": null,
+    "R2": -0.5835365601602371
+  },
+  "xgboost_metrics": {
+    "MAE": 1070.7891659110783,
+    "RMSE": 2120.40961198104,
+    "MAPE": null,
+    "R2": 0.6324286847908072
+  },
+  "best_model": "XGBoost",
+  "target_achieved": false
+}
