@@ -78,12 +78,12 @@
 - **Top Half:** Problem statement with simple before/after diagram:
   - BEFORE: Customer → Service A → [weeks pass] → Maybe Service B?
   - AFTER: Customer → Service A → [scheduled] → Service B → [scheduled] → Service C
-- **Bottom Left:** Use **association_rules_scatter.png** (simplified version showing just top 3 rules)
+- **Bottom Left:** Use **business_service_bundles.png** (shows top 3 combinations with lift metrics)
 - **Bottom Right:** Callout box with "12x Lift" statistic and revenue impact
 - **Color coding:** Use arrows/pathway visual to show customer journey
 
 ### Figures to Include:
-- **association_rules_scatter.png** (or create simplified version)
+- **business_service_bundles.png** (Top 3 service combinations with 12x lift callout)
 - Custom pathway diagram showing Slimming → Toning → Laser flow
 
 ---
@@ -107,16 +107,16 @@
 - Fills empty slots with profitable business
 
 ### Visual Design:
-- **Top:** Bar chart showing revenue by day of week (extract from seasonal_patterns.png)
-  - Highlight Tuesday (RED, lowest) and Saturday (GREEN, highest)
-  - Add visual "gap" annotation showing the 92% difference
+- **Top:** Bar chart showing revenue by day of week (**business_weekly_demand.png**)
+  - Tuesday (RED, lowest) and Saturday (GREEN, highest) already highlighted
+  - 92% gap annotation included
 - **Middle:** Simple before/after comparison:
   - BEFORE: Tuesday calendar with empty slots
   - AFTER: Tuesday calendar filled with appointments
 - **Bottom Right:** Revenue impact callout box (+36K MYR)
 
 ### Figures to Include:
-- **seasonal_patterns.png** (crop to show just day-of-week bar chart)
+- **business_weekly_demand.png** (weekly revenue pattern with Tuesday valley and Saturday peak)
 - Custom calendar visual showing empty vs filled slots
 
 ---
@@ -142,9 +142,9 @@
 - **TOTAL: +67,380 MYR/year** (+1.8% of base revenue)
 
 ### Visual Design:
-- **Top:** Line chart showing monthly revenue trends (from revenue_trends.png)
-  - Highlight September trough (RED valley) and January peak (GREEN peak)
-  - Add annotation showing 54% drop
+- **Top:** Line chart showing monthly revenue trends (**business_monthly_trends.png**)
+  - September trough (RED valley) and January peak (GREEN peak) already highlighted
+  - 54% drop annotation included
 - **Bottom:** Summary table with 3 rows:
   | Initiative | Annual Impact |
   |------------|---------------|
@@ -155,7 +155,7 @@
 - **Design:** Use gradient fill to show the "smoothing" of demand valleys
 
 ### Figures to Include:
-- **revenue_trends.png** (crop to monthly view)
+- **business_monthly_trends.png** (monthly revenue with January peak and September trough)
 - Custom table for financial summary
 
 ---
@@ -185,9 +185,9 @@
 - Not aggressive premium pushing
 
 ### Visual Design:
-- **Left Side:** Current portfolio pie chart showing 78% / 14% / 8% split
-  - Use **rpt_analysis.png** data
-  - Visual emphasis on the imbalance (78% slice dominates)
+- **Left Side:** Current portfolio horizontal bar chart showing 55% / 22% / 13% split
+  - Use **business_service_tiers.png**
+  - Visual emphasis on the imbalance (Entry-Level bar dominates)
 - **Right Side:** Proposed tier pyramid:
   ```
        BEST (Premium)
@@ -203,8 +203,8 @@
 - **Color scheme:** Bronze (Good), Silver (Better), Gold (Best)
 
 ### Figures to Include:
-- Extract from **rpt_analysis.png** showing distribution
-- Custom pyramid/tier diagram
+- **business_service_tiers.png** (portfolio distribution with entry/mid/premium breakdown)
+- Custom pyramid/tier diagram (optional - Good/Better/Best visual)
 
 ---
 
@@ -229,10 +229,10 @@
   - Captured revenue on busy days (no more turning customers away)
 
 ### Visual Design:
-- **Top Left:** Feature importance chart showing "day_of_week" as #1
-  - Use simplified version of **xgboost_feature_importance.png** (just top 5 features)
+- **Top Left:** Feature importance chart showing "Transaction Size" as #1
+  - Use **business_revenue_drivers.png** (shows top 5 controllable factors)
 - **Top Right:** 90-day forecast visualization
-  - Use **90day_forecast.png** showing predicted demand curve
+  - Use **business_demand_forecast.png** with confidence ranges and summary stats
 - **Bottom:** Before/After staffing calendar:
   - BEFORE: Same number of staff icons across all days
   - AFTER: Fewer staff on Tue/Wed, more staff on Fri/Sat
@@ -240,8 +240,8 @@
 - **Callout box:** +88K MYR impact
 
 ### Figures to Include:
-- **xgboost_feature_importance.png** (top 5 features only)
-- **90day_forecast.png**
+- **business_revenue_drivers.png** (top 5 features with percentage contributions)
+- **business_demand_forecast.png** (90-day prediction with confidence bands)
 - Custom staffing calendar visual
 
 ---
@@ -274,21 +274,22 @@
 - Higher customer satisfaction and loyalty
 
 ### Visual Design:
-- **Top:** Progress bar showing journey from 3.7 → 5.0 visits
-  - Visual representation: 3.7 visits (current) vs 5.0 visits (target)
-  - Gap = 269K MYR opportunity
-- **Middle:** Three-column layout with icons:
-  - Column 1: Trophy icon + "Tiered Loyalty"
-  - Column 2: Clock icon + "Automated Triggers"
-  - Column 3: Target icon + "Personalized Recommendations"
-  - Each column has 2-3 bullet points
-- **Bottom:** Example customer journey flow:
-  - Visit 1 → Email reminder (30 days) → Visit 2 → Personalized offer → Visit 3 → Gold tier unlocked → Visit 4-5
+- **Top Left:** Visit frequency distribution bar chart
+  - Shows most customers at 1-3 visits (68% have only 1 visit)
+  - Use **business_customer_retention.png** (left panel)
+- **Top Right:** Progression visualization from 3.7 → 5.0 visits
+  - Arrow showing the gap with revenue opportunity
+  - Use **business_customer_retention.png** (right panel)
+- **Bottom:** Three-column icon layout showing the retention system
+  - Use **business_retention_system.png**
+  - Column 1: 🏆 Tiered Loyalty (55K MYR)
+  - Column 2: ⏰ Automated Triggers (86K MYR)
+  - Column 3: 🎯 Personalized Recommendations (128K MYR)
 - **Use warm, engaging colors** to convey customer relationship
 
 ### Figures to Include:
-- Custom retention journey diagram
-- Visual representation of 3.7 → 5.0 progression
+- **business_customer_retention.png** (visit distribution + progression from 3.7 → 5.0 visits)
+- **business_retention_system.png** (three-part system with impact breakdown)
 
 ---
 
@@ -447,19 +448,22 @@
 
 ## FILES NEEDED FROM OUTPUTS FOLDER
 
-**Figures to Use:**
-- ✅ `association_rules_scatter.png` - Slide 3
-- ✅ `seasonal_patterns.png` - Slides 4 & 5
-- ✅ `revenue_trends.png` - Slide 5
-- ✅ `rpt_analysis.png` - Slide 6
-- ✅ `xgboost_feature_importance.png` - Slide 7
-- ✅ `90day_forecast.png` - Slide 7
+**Business-Friendly Figures to Use:**
+- ✅ `business_service_bundles.png` - Slide 3 (Service combinations with lift metrics)
+- ✅ `business_weekly_demand.png` - Slide 4 (Tuesday valley vs Saturday peak)
+- ✅ `business_monthly_trends.png` - Slide 5 (January peak vs September trough)
+- ✅ `business_service_tiers.png` - Slide 6 (Portfolio distribution by price tier)
+- ✅ `business_revenue_drivers.png` - Slide 7 (Top 5 controllable factors)
+- ✅ `business_demand_forecast.png` - Slide 7 (90-day prediction with confidence)
+- ✅ `business_customer_retention.png` - Slide 8 (Visit distribution + 3.7 → 5.0 progression)
+- ✅ `business_retention_system.png` - Slide 8 (Three-part retention system breakdown)
 
-**Additional Visuals to Create:**
+**All figures located in:** `outputs/figures/business/`
+
+**Additional Visuals to Create (Optional):**
 - Customer pathway diagram (Slide 3)
 - Before/After calendar visuals (Slides 4, 7)
 - Tier pyramid (Slide 6)
-- Retention journey flow (Slide 8)
 - Implementation roadmap (Slide 9)
 
 **Data from CSV files:**
